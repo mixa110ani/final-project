@@ -1,9 +1,0 @@
-@import "resetstyle";
-@import "mixins";
-@import "variables";
-@import "placeholder";
-
-header{
-  @include header();
-  background-color: green;
-}

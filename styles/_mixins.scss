@@ -1,9 +1,0 @@
-@import "variables";
-
-@mixin header() {
-    position: fixed;
-    width: 65%;
-	z-index: 5;
-    display: flex;
-    justify-content: center;
-}
