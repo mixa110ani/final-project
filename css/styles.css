@@ -50,7 +50,7 @@ table {
 
 header header {
   width: 100%;
-  height: 8%;
+  height: 56vh;
   position: fixed;
   z-index: 10;
   display: flex;
@@ -59,10 +59,18 @@ header header {
   justify-content: space-evenly;
 }
 header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 86px;
+}
+header .navs {
+  width: 100em;
+  padding-right: 141px;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 header ul {
   display: flex;
@@ -100,9 +108,11 @@ header h1:hover {
 }
 
 header ul .dropdown button {
-  background-color: hsl(0, 0%, 80%);
+  border-radius: 8px;
+  background-color: transparent;
   color: white;
   padding: 10px 15px;
+  font-size: 30px;
   border: none;
   cursor: pointer;
 }
@@ -112,7 +122,7 @@ header ul .dropdown button:hover {
 
 header ul .dropdown a {
   color: black;
-  font-size: 30px;
+  font-size: 15px;
   font-family: "Roboto", serif;
   display: block;
   padding: 10px 15px;
@@ -129,11 +139,14 @@ header ul .dropdown .content {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+header ul .dropdown .content:hover {
+  display: block;
+}
 
 header {
   background-image: url(../images/bella-resort-spa-side-photo-33.jpg);
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   background-image: url(../images/pexels-pixabay-258154.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,13 +155,55 @@ header {
 }
 header ul .dropdown {
   display: inline-block;
+  position: relative;
 }
-header ul .dropdown:hover {
+header ul .dropdown:hover .content {
   display: block;
 }
-header ul li {
+header #saxeli {
+  margin-left: 54px;
+  margin-top: -49px;
+  margin-right: 54px;
+  width: 261px;
+  height: 148px;
+  background-color: rgb(34, 32, 32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header #saxeli p {
   font-size: 30px;
+  font-family: "serif";
   font-weight: 700;
-  font-family: "Roboto", serif;
-  color: white;
+}
+header #saxeli img {
+  width: 12em;
+  height: 50px;
+}
+header #rest {
+  text-align: center;
+  font-size: 80px;
+}
+header form {
+  display: flex;
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 19px;
+  gap: 50px;
+}
+header form p {
+  max-width: 9em;
+}
+header form .stick {
+  background-color: black;
+  border: 2px solid black;
+}
+header form input {
+  width: 100%;
+  padding: 1.188rem;
+  border: 1px solid grey;
+  border-radius: 5px;
 }/*# sourceMappingURL=styles.css.map */

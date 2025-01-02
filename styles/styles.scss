@@ -9,10 +9,14 @@ header{
     @include headers;
     ul{
         
-            .dropdown{
+        
+        .dropdown{
                 display: inline-block;
+                position: relative;
                 &:hover{
-                    display: block;
+                    .content{
+                        display: block;
+                    }
                 }
                 button{
                 @extend %button;
@@ -28,8 +32,37 @@ header{
                 }
             }
        
-        li{
-            @include li;
+        
+        
+    }
+
+    #saxeli{
+        @include magari;
+        p{
+            font-size: $header-font-size;
+            font-family: $font-stack-2;
+            font-weight: $font-weight-2;
+        }
+        img{
+            width: 12em;
+            height: 50px;
+        }
+    }
+    #rest{
+    text-align: center;
+    font-size: 80px;
+    }
+    form{
+        @include form;
+        p{
+            max-width: 9em;
+        }
+        .stick{
+            background-color: black;
+    border: 2px solid black;
+        }
+        input{
+            @include input;
         }
     }
 }
