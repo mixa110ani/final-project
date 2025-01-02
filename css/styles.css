@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header header {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+}
+header li {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", serif;
+  color: white;
+}
+header li:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Roboto", serif;
+  color: white;
+}
+header h1:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+
+header ul .dropdown button {
+  background-color: hsl(0, 0%, 80%);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+header ul .dropdown button:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+header ul .dropdown a {
+  color: black;
+  font-size: 30px;
+  font-family: "Roboto", serif;
+  display: block;
+  padding: 10px 15px;
+}
+header ul .dropdown a:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+header ul .dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header ul .dropdown .content:hover {
+  display: block;
+}
+
+header {
+  background-image: url(../images/bella-resort-spa-side-photo-33.jpg);
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/pexels-pixabay-258154.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+}
+header ul .dropdown {
+  display: inline-block;
+}
+header ul li {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", serif;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

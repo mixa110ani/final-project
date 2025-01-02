@@ -1,0 +1,33 @@
+@import "resetstyle";
+@import "placeholder";
+@import "variables";
+@import "mixins";
+
+header{
+    @extend %headeri;
+    background-image: url(../images/bella-resort-spa-side-photo-33.jpg);
+    @include headers;
+    ul{
+        
+            .dropdown{
+                display: inline-block;
+                button{
+                @extend %button;
+        
+                }
+                
+                a{
+                    @extend %a;
+        
+                }
+                .content{
+                    @extend %cont;
+                }
+            }
+       
+        li{
+            @include li;
+        }
+    }
+}
+
