@@ -129,9 +129,6 @@ header ul .dropdown .content {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-header ul .dropdown .content:hover {
-  display: block;
-}
 
 header {
   background-image: url(../images/bella-resort-spa-side-photo-33.jpg);
@@ -145,6 +142,9 @@ header {
 }
 header ul .dropdown {
   display: inline-block;
+}
+header ul .dropdown:hover {
+  display: block;
 }
 header ul li {
   font-size: 30px;

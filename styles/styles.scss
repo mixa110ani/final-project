@@ -11,6 +11,9 @@ header{
         
             .dropdown{
                 display: inline-block;
+                &:hover{
+                    display: block;
+                }
                 button{
                 @extend %button;
         
