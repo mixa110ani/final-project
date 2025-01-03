@@ -62,15 +62,17 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 86px;
+  gap: 151px;
 }
 header .navs {
-  width: 100em;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
   padding-right: 141px;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 header ul {
   display: flex;
@@ -80,7 +82,7 @@ header ul {
 }
 header li {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Roboto", serif;
   color: white;
 }
@@ -96,7 +98,7 @@ header a {
 }
 header h1 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Roboto", serif;
   color: white;
 }
@@ -143,11 +145,94 @@ header ul .dropdown .content:hover {
   display: block;
 }
 
+main .flex .card {
+  width: 312px;
+  height: 292px;
+  margin-right: 33px;
+}
+main .flex .card img {
+  width: 125%;
+  height: 348px;
+  margin-bottom: 23px;
+  border-radius: 8px;
+}
+main .flex .card h1 {
+  font-family: "Roboto", serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: #343232;
+  width: 100%;
+  margin-bottom: 9px;
+}
+main .flex .card p {
+  font-family: "Roboto", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #636060;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .flex .card button {
+  background-color: rgb(77, 138, 235);
+  color: white;
+  font-size: 30px;
+  font-family: "serif";
+  border-radius: 4px;
+  padding: 7px;
+}
+main .flex .card button:hover {
+  background-color: rgb(13, 126, 191);
+}
+main .flex .card .button {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .imga {
+  display: flex;
+  flex-direction: column;
+  margin: 84px auto;
+  height: 50vh;
+  background-image: url(../images/546091.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  padding: 100px 20px;
+}
+main .imga p {
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: grey;
+}
+main .imga h1 {
+  font-family: "Roboto", serif;
+  font-size: 7rem;
+  font-weight: 700;
+}
+main .imga button {
+  margin-top: 40px;
+  background-color: rgb(35, 100, 35);
+  color: white;
+  font-size: 30px;
+  font-family: "serif";
+  border-radius: 9px;
+  padding: 12px;
+  border: none;
+}
+main .imga button:hover {
+  background-color: rgb(13, 53, 5);
+}
+
 header {
   background-image: url(../images/bella-resort-spa-side-photo-33.jpg);
   width: 100%;
   height: 60vh;
-  background-image: url(../images/pexels-pixabay-258154.jpg);
+  background-image: url(../images/431ac4ce-f907-4b9f-84ba-cedb8858a05c.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -156,40 +241,38 @@ header {
 header ul .dropdown {
   display: inline-block;
   position: relative;
+  margin-top: -8px;
 }
 header ul .dropdown:hover .content {
   display: block;
 }
 header #saxeli {
   margin-left: 54px;
-  margin-top: -49px;
+  margin-top: -5.4em;
   margin-right: 54px;
-  width: 261px;
-  height: 148px;
-  background-color: rgb(34, 32, 32);
+  width: 313px;
+  height: 193px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 header #saxeli p {
-  font-size: 30px;
+  font-size: 90px;
   font-family: "serif";
-  font-weight: 700;
-}
-header #saxeli img {
-  width: 12em;
-  height: 50px;
+  font-weight: 400;
 }
 header #rest {
   text-align: center;
   font-size: 80px;
+  margin-top: 3.5em;
 }
 header form {
   display: flex;
   font-size: 30px;
-  color: black;
+  color: rgb(61, 60, 59);
   background-color: white;
+  opacity: 88%;
   padding: 20px;
   border-radius: 19px;
   gap: 50px;
@@ -202,8 +285,144 @@ header form .stick {
   border: 2px solid black;
 }
 header form input {
+  color: grey;
   width: 100%;
   padding: 1.188rem;
-  border: 1px solid grey;
-  border-radius: 5px;
+  border: 3px solid grey;
+  border-radius: 7px;
+}
+header form label {
+  margin-top: 10px;
+  color: rgba(29, 27, 27, 0.705);
+  font-family: "serif";
+}
+header form button {
+  background-color: rgb(77, 138, 235);
+  color: white;
+  font-size: 30px;
+  font-family: "serif";
+  border-radius: 7px;
+  padding: 12px;
+}
+
+main .flex {
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 53px;
+  flex-wrap: wrap;
+  margin-bottom: 15%;
+}
+main .cardebs {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20%;
+  margin-bottom: 5%;
+}
+@media only screen and (max-width: 1024px) {
+  main .cardebs {
+    width: 75%;
+  }
+}
+main .cardebs .column {
+  display: flex;
+  flex-direction: row;
+  width: 76%;
+  justify-content: space-between;
+}
+main .cardebs--card1 {
+  width: 400px;
+  height: 300px;
+  margin-right: 33px;
+}
+main .cardebs--card1 img {
+  width: 100%;
+  height: 266px;
+  margin-bottom: 23px;
+}
+main .cardebs--card1 h1 {
+  font-family: "Roboto", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #343232;
+  width: 100%;
+  margin-bottom: 9px;
+}
+main .cardebs--card1 p {
+  font-family: "Roboto", serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #636060;
+}
+@media only screen and (max-width: 1024px) {
+  main .cardebs--card1 {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main .cardebs--card1 p {
+    display: none;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 201px;
+  background-color: #243043;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer #inf ul {
+  margin-top: 59px;
+  margin-left: 137px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: #818687;
+}
+footer #inf2 ul {
+  margin-top: 59px;
+  margin-left: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: #818687;
+}
+footer #inf3 ul {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: #818687;
+}
+footer #bolo {
+  margin-top: 59px;
+  margin-left: 112px;
+  font-family: "Roboto", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+footer #geolab {
+  width: 38px;
+  height: 50px;
+  margin-left: 416px;
+  margin-top: 58px;
 }/*# sourceMappingURL=styles.css.map */
