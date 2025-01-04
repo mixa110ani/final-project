@@ -51,7 +51,7 @@
     li{
         font-size: $header-font-size;
     font-weight: $font-weight-2;
-    font-family: $font-stack;
+    font-family: $font-stack-header;
     color: $header-text-color;
     &:hover{
         transform: scale(1.2);
@@ -70,7 +70,7 @@
     h1{
         font-size: 40px;
         font-weight: $font-weight-2;
-        font-family: $font-stack;
+        font-family: $font-stack-header;
         color: $header-text-color;
         &:hover{
             transform: scale(1.2);

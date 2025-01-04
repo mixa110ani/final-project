@@ -83,7 +83,7 @@ header ul {
 header li {
   font-size: 30px;
   font-weight: 400;
-  font-family: "Roboto", serif;
+  font-family: "Kanit", serif;
   color: white;
 }
 header li:hover {
@@ -99,7 +99,7 @@ header a {
 header h1 {
   font-size: 40px;
   font-weight: 400;
-  font-family: "Roboto", serif;
+  font-family: "Kanit", serif;
   color: white;
 }
 header h1:hover {
@@ -256,10 +256,11 @@ header #saxeli {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Kanit", serif;
 }
 header #saxeli p {
   font-size: 90px;
-  font-family: "serif";
+  font-family: "Kanit", serif;
   font-weight: 400;
 }
 header #rest {
@@ -411,6 +412,18 @@ footer #inf3 ul {
   font-family: "Roboto", serif;
   font-weight: 700;
   color: #818687;
+}
+footer #inf3 #inf4 {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: #818687;
+  gap: 20px;
 }
 footer #bolo {
   margin-top: 59px;

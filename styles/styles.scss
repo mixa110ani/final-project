@@ -41,7 +41,7 @@ header{
         @include magari;
         p{
             font-size: $name-font-size;
-            font-family: $font-stack-2;
+            font-family: $font-stack-header;
             font-weight: $font-weight-2;
         }
         
@@ -127,6 +127,10 @@ footer{
         ul{
             @include lulu($margin-left:108px);
         }
+    #inf4{
+        @include lulu($margin-left:108px);
+        gap: 20px;
+    }
         
     }
     #bolo{
