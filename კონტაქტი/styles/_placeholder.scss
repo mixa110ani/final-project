@@ -1,0 +1,115 @@
+@import "variables";
+@import "mixins";
+
+%headeri{
+    header{
+        width: 100%;
+        height: 56vh;
+        position: fixed;
+        z-index: 10;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+       -webkit-box-pack: space-evenly;
+           -ms-flex-pack: space-evenly;
+               justify-content: space-evenly;
+    }
+
+    nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 151px;
+}
+    
+
+    .navs{
+    background-color: $cards-button-color;
+    position: fixed;
+    z-index: 10;
+    width: 100%;   
+    padding-right: 141px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    ul{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    }
+
+    li{
+        font-size: $header-font-size;
+    font-weight: $font-weight-2;
+    font-family: $font-stack-header;
+    color: $header-text-color;
+    &:hover{
+        transform: scale(1.2);
+    text-decoration: underline; 
+    color:grey; 
+    transition: 0.8s;}
+    
+    }
+
+    a{
+        text-decoration: none;
+        color: $header-text-color;
+       
+    }
+
+    h1{
+        font-size: 40px;
+        font-weight: $font-weight-2;
+        font-family: $font-stack-header;
+        color: $header-text-color;
+        &:hover{
+            transform: scale(1.2);
+        text-decoration: underline; 
+        color: grey; 
+        transition: 0.8s;
+    }
+    }
+   
+}
+
+%button{
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    font-size: $header-font-size;
+    border: none;
+    cursor: pointer;
+    &:hover{background-color: hsl(0, 0%, 70%);}
+}
+%a{
+    color: black;
+    font-size: 15px;
+    font-family: $font-stack;
+    display:block;
+    padding: 10px 15px;
+    &:hover{background-color: hsl(0, 0%, 90%);}
+}
+
+%cont{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    &:hover{
+        display: block;
+    }
+}

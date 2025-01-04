@@ -1,0 +1,50 @@
+
+@import "resetstyle";
+@import "placeholder";
+@import "variables";
+@import "mixins";
+
+header{
+    @extend %headeri;
+    @include headersi;
+    ul{
+        
+        
+        .dropdown{
+                display: inline-block;
+                position: relative;
+                margin-top: -8px;
+                &:hover{
+                    .content{
+                        display: block;
+                    }
+                }
+                button{
+                @extend %button;
+        
+                }
+                
+                a{
+                    @extend %a;
+        
+                }
+                .content{
+                    @extend %cont;
+                }
+            }
+       
+        
+        
+    }
+
+    #saxeli{
+        @include magari;
+        p{
+            font-size: $name-font-size;
+            font-family: $font-stack-header;
+            font-weight: $font-weight-2;
+        }
+        
+    }
+    
+}

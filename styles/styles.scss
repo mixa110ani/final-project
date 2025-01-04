@@ -5,7 +5,7 @@
 
 header{
     @extend %headeri;
-    background-image: url(../images/bella-resort-spa-side-photo-33.jpg);
+    background-image: url(../images/Beach_Background-885.jpg);
     @include headers;
     ul{
         
@@ -111,6 +111,21 @@ main {
 
 footer{
     @include footers;
+    .kamelia{
+        padding-top:1.5%;
+        width: 15em;
+        @extend %inf1;
+        #imagess{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 44px;
+            i{
+                @include icons;
+            }
+        }
+    }
     #inf{
         ul{
             @include lulu;
@@ -127,11 +142,12 @@ footer{
         ul{
             @include lulu($margin-left:108px);
         }
-    #inf4{
-        @include lulu($margin-left:108px);
-        gap: 20px;
     }
-        
+    #inf4{
+        ul{
+            @include lulu($margin-left:108px);
+            gap: 30px;
+        }
     }
     #bolo{
         @include bolo;

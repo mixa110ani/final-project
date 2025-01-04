@@ -65,6 +65,7 @@ header nav {
   gap: 151px;
 }
 header .navs {
+  background-color: rgb(77, 174, 235);
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -228,11 +229,21 @@ main .imga button:hover {
   background-color: rgb(13, 53, 5);
 }
 
+footer .kamelia h4 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 1.438rem;
+  font-weight: 400;
+}
+footer .kamelia p {
+  color: white;
+}
+
 header {
-  background-image: url(../images/bella-resort-spa-side-photo-33.jpg);
+  background-image: url(../images/Beach_Background-885.jpg);
   width: 100%;
   height: 60vh;
-  background-image: url(../images/431ac4ce-f907-4b9f-84ba-cedb8858a05c.webp);
+  background-image: url(../images/Beach_Background-885.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -375,10 +386,25 @@ main .cardebs--card1 p {
 footer {
   width: 100%;
   height: 201px;
-  background-color: #243043;
+  background-color: rgb(77, 174, 235);
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+footer .kamelia {
+  padding-top: 1.5%;
+  width: 15em;
+}
+footer .kamelia #imagess {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 44px;
+}
+footer .kamelia #imagess i {
+  font-size: 30px;
+  color: cyan;
 }
 footer #inf ul {
   margin-top: 59px;
@@ -389,7 +415,7 @@ footer #inf ul {
   font-size: 15px;
   font-family: "Roboto", serif;
   font-weight: 700;
-  color: #818687;
+  color: white;
 }
 footer #inf2 ul {
   margin-top: 59px;
@@ -400,7 +426,7 @@ footer #inf2 ul {
   font-size: 15px;
   font-family: "Roboto", serif;
   font-weight: 700;
-  color: #818687;
+  color: white;
 }
 footer #inf3 ul {
   margin-top: 59px;
@@ -411,9 +437,9 @@ footer #inf3 ul {
   font-size: 15px;
   font-family: "Roboto", serif;
   font-weight: 700;
-  color: #818687;
+  color: white;
 }
-footer #inf3 #inf4 {
+footer #inf4 ul {
   margin-top: 59px;
   margin-left: 108px;
   display: flex;
@@ -422,8 +448,8 @@ footer #inf3 #inf4 {
   font-size: 15px;
   font-family: "Roboto", serif;
   font-weight: 700;
-  color: #818687;
-  gap: 20px;
+  color: white;
+  gap: 30px;
 }
 footer #bolo {
   margin-top: 59px;
