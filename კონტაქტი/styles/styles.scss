@@ -6,6 +6,8 @@
 
 header{
     @extend %headeri;
+    height: 13vh;
+    margin-bottom: 4%;
     @include headersi;
     ul{
         
@@ -48,3 +50,87 @@ header{
     }
     
 }
+
+main{
+    margin-bottom: 5%;
+
+    form{
+        display: flex;
+    justify-content: center;
+    gap: 10%;
+        fieldset{
+           @include  field;
+            @extend %grafi;
+            .for{
+                width: 100%;
+                label{
+                    font-weight: $font-weight-big;
+                    font-size: $cards-font-size;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+    }
+    #information{
+        display:block;
+        h2{
+            @include h2s;
+        }
+        .info{
+            @include info;
+        }
+    }
+}
+    
+
+    footer{
+        @include footers;
+        .kamelia{
+            padding-top:1.5%;
+            width: 15em;
+            @extend %inf1;
+            #imagess{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 44px;
+                i{
+                    @include icons;
+                }
+            }
+        }
+        #inf{
+            ul{
+                @include lulu;
+            }
+            
+        }
+        #inf2{
+            ul{
+                @include lulu($margin-left:96px);
+            }
+            
+        }
+        #inf3{
+            ul{
+                @include lulu($margin-left:108px);
+            }
+        }
+        #inf4{
+            ul{
+                @include lulu($margin-left:108px);
+                gap: 30px;
+            }
+        }
+        #bolo{
+            @include bolo;
+        }
+    
+        #geolab{
+            @include geolab;
+    
+        }
+    }
+

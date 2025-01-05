@@ -146,7 +146,71 @@ header ul .dropdown .content:hover {
   display: block;
 }
 
+main form fieldset legend {
+  font-size: 49px;
+  height: 2em;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 153, 255, 0.76);
+}
+main form fieldset textarea {
+  margin-left: 18%;
+  margin-top: 2%;
+  height: 18.625rem;
+  width: 31%;
+}
+main form fieldset textarea p {
+  color: grey;
+  font-size: 14px;
+}
+main form fieldset #contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  margin-top: 2%;
+}
+main form fieldset #contact input {
+  width: 100%;
+  padding: 1.188rem 0;
+  border: 1px solid grey;
+  text-align: center;
+  font-size: 21px;
+  border-radius: 30px;
+  margin-top: 0.5em;
+}
+main form fieldset #contact #gvari {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+}
+main form fieldset #contact button {
+  margin-top: 0.875rem;
+  width: 100%;
+  text-align: center;
+  padding: 8%;
+  background-color: #5863E3;
+  color: white;
+  border: 1px solid grey;
+}
+main form fieldset #contact textarea {
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer .kamelia h4 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 1.438rem;
+  font-weight: 400;
+}
+footer .kamelia p {
+  color: white;
+}
+
 header {
+  height: 13vh;
+  margin-bottom: 4%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,4 +241,133 @@ header #saxeli p {
   font-size: 90px;
   font-family: "Kanit", serif;
   font-weight: 400;
+}
+
+main {
+  margin-bottom: 5%;
+}
+main form {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+main form fieldset {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 1.25rem;
+  border: none;
+}
+main form fieldset .for {
+  width: 100%;
+}
+main form fieldset .for label {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.5em;
+}
+main #information {
+  display: block;
+}
+main #information h2 {
+  height: 1.2em;
+  margin-top: 10%;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-size: 90px;
+  border-bottom: 3px solid rgb(77, 174, 235);
+}
+main #information .info {
+  font-family: Helvetica Neue LT GEO;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 23px;
+}
+
+footer {
+  width: 100%;
+  height: 201px;
+  background-color: rgb(77, 174, 235);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .kamelia {
+  padding-top: 1.5%;
+  width: 15em;
+}
+footer .kamelia #imagess {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 44px;
+}
+footer .kamelia #imagess i {
+  font-size: 30px;
+  color: cyan;
+}
+footer #inf ul {
+  margin-top: 59px;
+  margin-left: 137px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf2 ul {
+  margin-top: 59px;
+  margin-left: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf3 ul {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf4 ul {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+  gap: 30px;
+}
+footer #bolo {
+  margin-top: 59px;
+  margin-left: 112px;
+  font-family: "Roboto", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+footer #geolab {
+  width: 38px;
+  height: 50px;
+  margin-left: 416px;
+  margin-top: 58px;
 }/*# sourceMappingURL=styles.css.map */

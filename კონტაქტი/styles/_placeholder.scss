@@ -113,3 +113,79 @@
         display: block;
     }
 }
+
+
+%grafi{
+    
+    legend {
+        font-size: 49px;
+        height: 2em;
+    text-align: center;
+    border-bottom: 2px solid $registry-color;
+    }
+    
+    textarea {
+        margin-left: 18%;
+        margin-top: 2%;
+        height: 18.625rem;
+        width: 31%;
+        p{
+            color: grey;
+            font-size: 14px;
+        }
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        margin-top: 2%;
+        input {
+             width: 100%;
+                padding: 1.188rem 0;
+                border: 1px solid grey;
+                text-align: center;
+                font-size: 21px;
+                border-radius: 30px;
+                margin-top: 0.5em;
+        }
+        #gvari{
+            display: flex;
+            justify-content:center ;
+            flex-direction: row;
+            gap: 50px;
+            
+            
+        }
+        button {
+            margin-top: 0.875rem;
+            width: 100%;
+            text-align: center;
+            padding: 8%;
+            background-color: #5863E3;
+            color: white;
+            border: 1px solid grey;
+        }
+        textarea{
+            margin: auto;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    
+   
+    
+}
+
+
+%inf1{
+    h4{
+    font-size: 26px;
+    color: white;
+    margin-bottom: 1.438rem;
+    font-weight: $font-weight-2;
+    }
+    p{
+        color: white;
+    }
+}
+
