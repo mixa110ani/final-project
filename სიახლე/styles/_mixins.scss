@@ -1,0 +1,217 @@
+@import "variables";
+
+@mixin headeri(){
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    z-index: 10;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+   -webkit-box-pack: space-evenly;
+       -ms-flex-pack: space-evenly;
+           justify-content: space-evenly;
+}
+
+
+
+@mixin magari(){
+    margin-left: 54px;
+    margin-top: -5.4em;
+    margin-right: 54px;
+    width: 313px;
+    height: 193px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $font-stack-header;
+}
+
+@mixin button1(){
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+@mixin headers(){
+    width: 100%;
+    height: 50vh;
+    color: #FFF;
+}
+
+@mixin form(){
+    display: flex;
+    font-size: 30px;
+    color: rgb(61, 60, 59);
+    background-color: white;
+    opacity: 88%;
+    padding: 20px;
+    border-radius: 19px;
+    gap: 50px;
+    
+}
+
+@mixin input(){
+    color: grey;
+    width: 100%;
+    padding: 1.188rem;
+    border: 3px solid grey;
+    border-radius: 7px;
+}
+
+@mixin button2(){
+    background-color: rgb(77, 138, 235);
+    color: white;
+    font-size: $header-font-size;
+    font-family: $font-stack-2;
+    border-radius: 7px;
+    padding: 12px;
+}
+
+@mixin flex(){
+
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+}
+
+@mixin cards(){
+    height: 900px;
+    gap: 15em;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: center;
+}
+
+
+@mixin flex2{
+        height: 20rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 53px;
+        flex-wrap: wrap;
+        margin-bottom: 15%;
+}
+
+
+@mixin cards7(){
+    height: 90vh;
+    width: 54vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: center;
+            
+    align-items: center;
+    gap: 20%;
+    margin-bottom: 5%;
+    margin-top: 10rem;
+
+}
+
+@mixin card4(){
+    width: 400px;
+    height: 300px;
+    margin-right: 33px;
+    img{
+        width: $width-cardimage2;
+        height: $height-cardimage2;
+        margin-bottom: 23px;
+    }
+    h1{
+        font-family: $font-stack;
+        font-size: 30px;
+        font-weight: 400;
+        color: #343232;
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    p{
+        font-family: $font-stack;
+        font-size: 25px;
+        font-weight: 400;
+        color: #636060;
+        
+    }
+
+}
+
+@mixin footers{
+    width:100%;
+    height: 201px;
+    background-color: rgb(77, 174, 235);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+@mixin lulu($margin-left:137px, $margin-top:59px){
+   margin-top: $margin-top;
+    margin-left: $margin-left;
+    display:flex;
+    flex-direction:column;
+    gap: 14px;
+    font-size: $font-size-footer;
+    font-family: $font-stack;
+    font-weight: $font-weight-big;
+    color: $color-footer;
+}
+
+@mixin bolo($margin-left:112px, $margin-top:59px){
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+    font-family: $font-stack;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+
+
+}
+
+@mixin geolab{
+    width: 38px;
+height: 50px;
+margin-left: 416px;
+margin-top: 58px;
+}
+
+
+@mixin icons(){
+    font-size: 30px;
+    color: cyan;
+}
+
+
+@mixin h1stvis{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    font-weight: $font-weight-2;
+    text-align:center;
+    border-bottom: 3px solid $cards-button-color;
+    padding: 0.3em;
+}

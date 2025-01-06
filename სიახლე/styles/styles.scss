@@ -1,0 +1,158 @@
+@import "resetstyle";
+@import "placeholder";
+@import "variables";
+@import "mixins";
+
+header{
+    @extend %headeri;
+    @include headers;
+    ul{
+        
+        
+        .dropdown{
+                display: inline-block;
+                position: relative;
+                margin-top: -8px;
+                &:hover{
+                    .content{
+                        display: block;
+                    }
+                }
+                button{
+                @extend %button;
+        
+                }
+                
+                a{
+                    @extend %a;
+        
+                }
+                .content{
+                    @extend %cont;
+                }
+            }
+       
+        
+        
+    }
+
+    #saxeli{
+        @include magari;
+        p{
+            font-size: $name-font-size;
+            font-family: $font-stack-header;
+            font-weight: $font-weight-2;
+        }
+        
+    }
+    #rest{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        margin-top: -5em;
+        justify-content: center;
+        }
+        img{
+            height: 40vh;
+    width: 80%;
+    border-radius: 21px;
+        }
+}
+
+main {
+    
+    #h32{
+        @include h1stvis;
+    }
+    #all{
+    display: flex;
+    justify-content: space-between;
+    #newspaper{
+        width: 51em;
+        margin-top: 10rem;
+        @extend %axali;
+    }
+    .flex {
+        @include flex2;
+
+        .card {
+         @extend %card1;
+        }
+    }
+    .imga{
+        @extend %imga;
+    }
+     .cardebs{
+        @include cards7;
+        @media only screen and (max-width: 1024px){ 
+            width: 75%}
+      .column{ 
+        display: flex; 
+        flex-direction: row;
+        width: 76%;
+        justify-content: space-between;
+    }      
+        &--card1{
+            @include card4;
+            @media only screen and (max-width: 1024px){
+                margin-bottom: 50px;
+            }
+            @media only screen and (max-width: 480px){
+                p{
+                    display:none;
+                }
+            }
+    }
+  }
+}
+}
+
+footer{
+    @include footers;
+    .kamelia{
+        padding-top:1.5%;
+        width: 15em;
+        @extend %inf1;
+        #imagess{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 44px;
+            i{
+                @include icons;
+            }
+        }
+    }
+    #inf{
+        ul{
+            @include lulu;
+        }
+        
+    }
+    #inf2{
+        ul{
+            @include lulu($margin-left:96px);
+        }
+        
+    }
+    #inf3{
+        ul{
+            @include lulu($margin-left:108px);
+        }
+    }
+    #inf4{
+        ul{
+            @include lulu($margin-left:108px);
+            gap: 30px;
+        }
+    }
+    #bolo{
+        @include bolo;
+    }
+
+    #geolab{
+        @include geolab;
+
+    }
+}

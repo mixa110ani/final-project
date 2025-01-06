@@ -1,0 +1,468 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header header {
+  width: 100%;
+  height: 56vh;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 151px;
+}
+header .navs {
+  background-color: rgb(77, 174, 235);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-right: 141px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+}
+header li {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Kanit", serif;
+  color: white;
+}
+header li:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Kanit", serif;
+  color: white;
+}
+header h1:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+
+header ul .dropdown button {
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+header ul .dropdown button:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+header ul .dropdown a {
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  display: block;
+  padding: 10px 15px;
+}
+header ul .dropdown a:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+header ul .dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header ul .dropdown .content:hover {
+  display: block;
+}
+
+main #all .flex .card {
+  width: 312px;
+  height: 292px;
+  margin-right: 33px;
+}
+main #all .flex .card img {
+  width: 125%;
+  height: 348px;
+  margin-bottom: 23px;
+  border-radius: 8px;
+}
+main #all .flex .card h1 {
+  font-family: "Roboto", serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: #343232;
+  width: 100%;
+  margin-bottom: 9px;
+}
+main #all .flex .card p {
+  font-family: "Roboto", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #636060;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main #all .flex .card button {
+  background-color: rgb(77, 138, 235);
+  color: white;
+  font-size: 30px;
+  font-family: "serif";
+  border-radius: 4px;
+  padding: 7px;
+}
+main #all .flex .card button:hover {
+  background-color: rgb(13, 126, 191);
+}
+main #all .flex .card .button {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #all .imga {
+  display: flex;
+  flex-direction: column;
+  margin: 84px auto;
+  height: 50vh;
+  background-image: url(../images/546091.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  padding: 100px 20px;
+}
+main #all .imga p {
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: grey;
+}
+main #all .imga h1 {
+  font-family: "Roboto", serif;
+  font-size: 7rem;
+  font-weight: 700;
+}
+main #all .imga button {
+  margin-top: 40px;
+  background-color: rgb(35, 100, 35);
+  color: white;
+  font-size: 30px;
+  font-family: "serif";
+  border-radius: 9px;
+  padding: 12px;
+  border: none;
+}
+main #all .imga button:hover {
+  background-color: rgb(13, 53, 5);
+}
+
+footer .kamelia h4 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 1.438rem;
+  font-weight: 400;
+}
+footer .kamelia p {
+  color: white;
+}
+
+main #all #newspaper h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 3px solid rgb(77, 174, 235);
+  padding: 0.3em;
+}
+main #all #newspaper .fornew {
+  display: flex;
+}
+main #all #newspaper .fornew img {
+  width: 16vw;
+  height: 16vh;
+}
+main #all #newspaper .fornew p {
+  width: 41%;
+  font-size: 22.5px;
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+  color: #FFF;
+}
+header ul .dropdown {
+  display: inline-block;
+  position: relative;
+  margin-top: -8px;
+}
+header ul .dropdown:hover .content {
+  display: block;
+}
+header #saxeli {
+  margin-left: 54px;
+  margin-top: -5.4em;
+  margin-right: 54px;
+  width: 313px;
+  height: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kanit", serif;
+}
+header #saxeli p {
+  font-size: 90px;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+}
+header #rest {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  margin-top: -5em;
+  justify-content: center;
+}
+header img {
+  height: 40vh;
+  width: 80%;
+  border-radius: 21px;
+}
+
+main #h32 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 3px solid rgb(77, 174, 235);
+  padding: 0.3em;
+}
+main #all {
+  display: flex;
+  justify-content: space-between;
+}
+main #all #newspaper {
+  width: 51em;
+  margin-top: 10rem;
+}
+main #all .flex {
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 53px;
+  flex-wrap: wrap;
+  margin-bottom: 15%;
+}
+main #all .cardebs {
+  height: 90vh;
+  width: 54vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  margin-bottom: 5%;
+  margin-top: 10rem;
+}
+@media only screen and (max-width: 1024px) {
+  main #all .cardebs {
+    width: 75%;
+  }
+}
+main #all .cardebs .column {
+  display: flex;
+  flex-direction: row;
+  width: 76%;
+  justify-content: space-between;
+}
+main #all .cardebs--card1 {
+  width: 400px;
+  height: 300px;
+  margin-right: 33px;
+}
+main #all .cardebs--card1 img {
+  width: 100%;
+  height: 266px;
+  margin-bottom: 23px;
+}
+main #all .cardebs--card1 h1 {
+  font-family: "Roboto", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #343232;
+  width: 100%;
+  margin-bottom: 9px;
+}
+main #all .cardebs--card1 p {
+  font-family: "Roboto", serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #636060;
+}
+@media only screen and (max-width: 1024px) {
+  main #all .cardebs--card1 {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main #all .cardebs--card1 p {
+    display: none;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 201px;
+  background-color: rgb(77, 174, 235);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .kamelia {
+  padding-top: 1.5%;
+  width: 15em;
+}
+footer .kamelia #imagess {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 44px;
+}
+footer .kamelia #imagess i {
+  font-size: 30px;
+  color: cyan;
+}
+footer #inf ul {
+  margin-top: 59px;
+  margin-left: 137px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf2 ul {
+  margin-top: 59px;
+  margin-left: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf3 ul {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf4 ul {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+  gap: 30px;
+}
+footer #bolo {
+  margin-top: 59px;
+  margin-left: 112px;
+  font-family: "Roboto", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+footer #geolab {
+  width: 38px;
+  height: 50px;
+  margin-left: 416px;
+  margin-top: 58px;
+}/*# sourceMappingURL=styles.css.map */
