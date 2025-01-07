@@ -1,0 +1,123 @@
+@import "resetstyle";
+@import "placeholder";
+@import "variables";
+@import "mixins";
+
+header{
+    @extend %headeri;
+    @include headers;
+    ul{
+        
+        
+        .dropdown{
+                display: inline-block;
+                position: relative;
+                margin-top: -8px;
+                &:hover{
+                    .content{
+                        display: block;
+                    }
+                }
+                button{
+                @extend %button;
+        
+                }
+                
+                a{
+                    @extend %a;
+        
+                }
+                .content{
+                    @extend %cont;
+                }
+            }
+       
+        
+        
+    }
+
+    #saxeli{
+        @include magari;
+        p{
+            font-size: $name-font-size;
+            font-family: $font-stack-header;
+            font-weight: $font-weight-2;
+        }
+        
+    }
+    
+}
+
+
+main{
+    .maininfo{
+        display: flex;
+        flex-direction: column;
+        @extend %forinfo;
+    }
+    .goodc{
+        padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 25%;
+        .kaikaci{
+            @extend %informationg;
+        }
+        .kaikaci2{
+            @extend %informationg;
+            max-width: 57vw;
+            justify-content: space-between;
+        }
+    }
+}
+
+footer{
+    @include footers;
+    .kamelia{
+        padding-top:1.5%;
+        width: 15em;
+        @extend %inf1;
+        #imagess{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 44px;
+            i{
+                @include icons;
+            }
+        }
+    }
+    #inf{
+        ul{
+            @include lulu;
+        }
+        
+    }
+    #inf2{
+        ul{
+            @include lulu($margin-left:96px);
+        }
+        
+    }
+    #inf3{
+        ul{
+            @include lulu($margin-left:108px);
+        }
+    }
+    #inf4{
+        ul{
+            @include lulu($margin-left:108px);
+            gap: 30px;
+        }
+    }
+    #bolo{
+        @include bolo;
+    }
+
+    #geolab{
+        @include geolab;
+
+    }
+}
+
+

@@ -1,0 +1,351 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header header {
+  width: 100%;
+  height: 56vh;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 151px;
+}
+header .navs {
+  background-color: rgb(77, 174, 235);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-right: 141px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+}
+header li {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Kanit", serif;
+  color: white;
+}
+header li:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Kanit", serif;
+  color: white;
+}
+header h1:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+
+header ul .dropdown button {
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+header ul .dropdown button:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+header ul .dropdown a {
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  display: block;
+  padding: 10px 15px;
+}
+header ul .dropdown a:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+header ul .dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header ul .dropdown .content:hover {
+  display: block;
+}
+
+footer .kamelia h4 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 1.438rem;
+  font-weight: 400;
+}
+footer .kamelia p {
+  color: white;
+}
+
+main .section .title h1 {
+  width: 28%;
+  height: 4vh;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 42px;
+  border-bottom: 5px solid rgb(77, 174, 235);
+}
+main .section .card1 {
+  width: 20vw;
+  height: 41vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  gap: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+main .section .card1 .images {
+  height: 20vh;
+  background-image: url(./../images/236379211.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .section .card1 .images:hover {
+  scale: 1.2;
+  transition: 0.4s;
+}
+main .section .card1 .fortext {
+  padding-left: 30px;
+}
+main .section .card1 .fortext h1 {
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "serif";
+}
+main .section .card1 .fortext p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Kanit", serif;
+}
+main .section .card1 .fortext a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(77, 174, 235);
+  font-family: "Kanit", serif;
+}
+main .section .card1 .fortext i {
+  font-size: 20px;
+  color: rgb(77, 174, 235);
+  margin-left: 10px;
+}
+
+header {
+  width: 100%;
+  height: 13vh;
+  color: #FFF;
+}
+header ul .dropdown {
+  display: inline-block;
+  position: relative;
+  margin-top: -8px;
+}
+header ul .dropdown:hover .content {
+  display: block;
+}
+header #saxeli {
+  margin-left: 54px;
+  margin-top: -5.4em;
+  margin-right: 54px;
+  width: 313px;
+  height: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kanit", serif;
+}
+header #saxeli p {
+  font-size: 90px;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+}
+
+main {
+  background-color: rgb(238 238 239/var(--tw-bg-opacity));
+  padding-bottom: 46px;
+}
+main .section .cards {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+main .section .cards .forcard {
+  display: flex;
+  gap: 130px;
+  width: -moz-max-content;
+  width: max-content;
+}
+main .section .cards .forcard .card1:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 201px;
+  background-color: rgb(77, 174, 235);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .kamelia {
+  padding-top: 1.5%;
+  width: 15em;
+}
+footer .kamelia #imagess {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 44px;
+}
+footer .kamelia #imagess i {
+  font-size: 30px;
+  color: cyan;
+}
+footer #inf ul {
+  margin-top: 59px;
+  margin-left: 137px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf2 ul {
+  margin-top: 59px;
+  margin-left: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf3 ul {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+}
+footer #inf4 ul {
+  margin-top: 59px;
+  margin-left: 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  color: white;
+  gap: 30px;
+}
+footer #bolo {
+  margin-top: 59px;
+  margin-left: 112px;
+  font-family: "Roboto", serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+footer #geolab {
+  width: 38px;
+  height: 50px;
+  margin-left: 416px;
+  margin-top: 58px;
+}/*# sourceMappingURL=styles.css.map */

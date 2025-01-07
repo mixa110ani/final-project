@@ -1,0 +1,314 @@
+@import "variables";
+@import "mixins";
+
+%headeri{
+    header{
+        width: 100%;
+        height: 56vh;
+        position: fixed;
+        z-index: 10;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+       -webkit-box-pack: space-evenly;
+           -ms-flex-pack: space-evenly;
+               justify-content: space-evenly;
+    }
+
+    nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 151px;
+}
+    
+
+    .navs{
+    background-color: $cards-button-color;
+    position: fixed;
+    z-index: 10;
+    width: 100%;   
+    padding-right: 141px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    }
+    ul{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+    }
+
+    li{
+        font-size: $header-font-size;
+    font-weight: $font-weight-2;
+    font-family: $font-stack-header;
+    color: $header-text-color;
+    &:hover{
+        transform: scale(1.2);
+    text-decoration: underline; 
+    color:grey; 
+    transition: 0.8s;}
+    
+    }
+
+    a{
+        text-decoration: none;
+        color: $header-text-color;
+       
+    }
+
+    h1{
+        font-size: 40px;
+        font-weight: $font-weight-2;
+        font-family: $font-stack-header;
+        color: $header-text-color;
+        &:hover{
+            transform: scale(1.2);
+        text-decoration: underline; 
+        color: grey; 
+        transition: 0.8s;
+    }
+    }
+   
+}
+
+
+
+%button{
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    font-size: $header-font-size;
+    border: none;
+    cursor: pointer;
+    &:hover{background-color: hsl(0, 0%, 70%);}
+}
+
+%a{
+    color: black;
+    font-size: 15px;
+    font-family: $font-stack;
+    display:block;
+    padding: 10px 15px;
+    &:hover{background-color: hsl(0, 0%, 90%);}
+}
+
+%cont{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    &:hover{
+        display: block;
+    }
+}
+
+%card1{
+    width: 312px;;
+    height: 292px;
+    margin-right: 33px;
+    img{
+        width: $width-cardimage;
+        height: $height-cardimage;
+        margin-bottom: 23px;
+        border-radius: 8px;
+    }
+    h1{
+        font-family: $font-stack;
+        font-size: 38px;;
+        font-weight: $font-weight-2;
+        color: #343232;
+        width: 100%;
+        margin-bottom: 9px;
+    }
+    p{
+        font-family: $font-stack;
+        font-size: 22px;
+        font-weight: 400;
+        color: #636060;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    button{
+        background-color: rgb(77, 138, 235);
+    color: white;
+    font-size: 30px;
+    font-family: "serif";
+    border-radius: 4px;
+    padding: 7px;
+    &:hover{background-color:rgb(13, 126, 191)}
+    }
+    .button{
+        display: flex;
+    justify-content: space-between;
+    }
+    }
+
+
+    %imga{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 84px auto;
+        height: 50vh;
+        background-image: url(../images/546091.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #FFF;
+        padding: 100px 20px;
+        p{
+            font-family: $font-stack;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: grey;
+        }
+    
+        h1{
+            font-family: $font-stack;
+            font-size: 7rem;
+            font-weight: 700;
+        }
+        button{
+    margin-top: 40px;
+    background-color: rgb(35, 100, 35);
+    color: white;
+    font-size: 30px;
+    font-family: "serif";
+    border-radius: 9px;
+    padding: 12px;
+    border: none;
+    &:hover{background-color:rgb(13, 53, 5)}
+    }
+ }
+
+ 
+
+
+%inf1{
+    h4{
+    font-size: 26px;
+    color: white;
+    margin-bottom: 1.438rem;
+    font-weight: $font-weight-2;
+    }
+    p{
+        color: white;
+    }
+}
+
+
+
+
+%forinfo{
+        h1{
+            font-size: 102px;
+            height: 1.2em;
+            text-align: center;
+            border-bottom: 2px solid $registry-color;
+            margin-top: 8vh;
+            margin-bottom: 20px;
+            font-family: $font-stack-header;
+            }
+            img{
+            width: 60vw;
+            height: 52vh;
+            margin: auto;
+            margin-bottom: 20px;
+            }
+        .fortexts{
+            display: flex;
+            flex-direction: column;
+            gap: 6vh;
+            h2{
+                width: 50%;
+                font-family: $font-stack-header;
+                font-size: 70px;
+                font-weight: $font-weight-big;
+                color: #343232;
+                margin-bottom: 9px;
+                text-align: center;
+                margin: auto;
+        }
+        p{
+                width: 50%;
+                font-family: $font-stack-header;
+                font-size: 23px;
+                font-weight: $font-weight-2;
+                margin-bottom: 9px;
+                color: grey;
+                text-align: center;
+                margin: auto;
+        }
+            
+    }
+
+}
+
+%informationg{
+    display: flex;
+    margin-top: 6%;
+    gap: 3%;
+    margin: auto;
+    margin-bottom: 10vh;
+    img{
+        border-radius:10px;
+        width:500px;
+        height: 400px;
+    }
+    .pandh{
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    justify-content: center;
+    h1{
+        font-size: 50px;
+    line-height: 44px;
+    margin-bottom: 30px;
+    }
+    p{
+        font-size: 22px;
+    line-height: 22px;
+    width: 160%;
+    color: rgb(54, 53, 53);
+    }
+    button{
+        font-size: 22px;
+        border-radius:30px;
+        padding:15px;
+        margin-top: 5em;
+        background-color: $cards-button-color;
+        color: white;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(38, 104, 226);
+        }
+    }
+    }
+}
