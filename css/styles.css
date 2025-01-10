@@ -69,7 +69,6 @@ header .navs {
   position: fixed;
   z-index: 10;
   width: 100%;
-  padding-right: 141px;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
@@ -148,7 +147,8 @@ header ul .dropdown .content:hover {
 
 main .flex .card {
   width: 312px;
-  height: 292px;
+  height: -moz-max-content;
+  height: max-content;
   margin-right: 33px;
 }
 main .flex .card img {
@@ -337,11 +337,6 @@ main .cardebs {
   gap: 20%;
   margin-bottom: 5%;
 }
-@media only screen and (max-width: 1024px) {
-  main .cardebs {
-    width: 75%;
-  }
-}
 main .cardebs .column {
   display: flex;
   flex-direction: row;
@@ -464,4 +459,14 @@ footer #geolab {
   height: 50px;
   margin-left: 416px;
   margin-top: 58px;
+}
+
+@media screen and (max-width: 1024px) {
+  .navs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  form {
+    scale: 0.7;
+  }
 }/*# sourceMappingURL=styles.css.map */

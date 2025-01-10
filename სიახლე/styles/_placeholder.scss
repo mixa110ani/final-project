@@ -251,23 +251,196 @@
 
 
 %axali{
-    h1{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    font-weight: $font-weight-2;
-    text-align:center;
-    border-bottom: 3px solid $cards-button-color;
-    padding: 0.3em;
-    }    
-    .fornew{
-        display: flex;
-        img{
-            width: 16vw;
-            height:16vh;
-        }
-        p{
-            width: 41%;
-            font-size: 22.5px;
-        }
+    #sawiro{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 120px;
+        width: 43vw;
     }
+    
+    #satauri1{
+    
+        
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 0px;
+    display: inline-block;
+    color: #4E6FAE;
+    
+    }
+    
+    #satauri2{
+    font-size: 26px;
+    font-weight: 200;
+    display: inline-block;
+    color: #4E6FAE;
+    }
+    
+    
+    
+    #div5{
+        
+        margin: 0 auto;
+    width: 1052px;
+    margin-bottom: 26px;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+    }
+    
+    
+    #xazi{
+        width: 2px;
+        height: 25px;
+        background-color: #5012D5;
+        display: inline-block;
+        margin: 0px 12px 0px 17px;
+    }
+    
+    
+    
+    
+    
+    
+    #xazi1{
+        width: 2px;
+        height: 50px;
+        background-color: #5012D5;
+        display: inline-block;
+        margin: 0px 50px;
+    }
+}
+
+%margarini{
+    .cifrebi{
+
+        font-size: 24px;
+        font-weight: 400;
+        padding: 10px;
+        color: #84FF81;
+        background-color: #5012D5;
+        display:inline-block;
+        margin-left: 52px;
+        margin-bottom: 30px;
+        }
+        
+        
+        .maisi{
+        
+        font-size: 24px;
+        font-weight: 400;
+        color: #8D81FF;
+        margin-left: 52px;
+        margin-bottom: 35px;
+        }
+        
+        .satauri{
+        font-size: 20px;
+        font-weight: 700;
+        color: #4E6FAE;
+        margin-left: 52px;
+        
+        }
+        
+        .surati{
+            margin-left: 52px;
+            margin-top: 30px;
+            vertical-align: top;
+        }
+        
+        .teqsti{
+        
+        font-size: 16px;
+        font-weight: 400;
+        color: #4E6FAE;
+        display: inline-block;
+        margin-left: 90px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        width: 900px;
+        height: 281px ;
+        margin-right: 97px;
+        }
+        
+        #gverdi{
+            color: #4E6FAE;
+            display:inline-block;
+            font-size: 26px;
+            font-weight: 700;
+            padding-right: 81px;
+            text-decoration: none;
+        }
+        
+        #teqsti-2{
+            font-size: 16px;
+        font-weight: 400;
+        color: #4E6FAE;
+        display: block;
+        margin-left: 52px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        width: 900px;
+        height: 281px ;
+        margin-right: 97px;
+        
+        }
+    .cartoni{
+        display:flex;
+        align-items: center;
+        padding: 101px;
+    }
+    .forcifrebi{
+        padding-top: 9vh;
+    padding-left: 6vw;
+    }
+}
+
+
+%imga{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 84px auto;
+    height: 50vh;
+    background-image: url(../images/546091.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #FFF;
+    padding: 100px 20px;
+    p{
+        font-family: $font-stack;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: grey;
+    }
+
+    h1{
+        font-family: $font-stack;
+        font-size: 13rem;
+        font-weight: 700;
+    }
+    button{
+margin-top: 40px;
+background-color: rgb(35, 100, 35);
+color: white;
+font-size: 30px;
+font-family: "serif";
+border-radius: 9px;
+padding: 12px;
+border: none;
+&:hover{background-color:rgb(13, 53, 5)}
+}
 }

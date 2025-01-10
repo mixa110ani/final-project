@@ -87,8 +87,6 @@ main {
     }
      .cardebs{
         @include cards7;
-        @media only screen and (max-width: 1024px){ 
-            width: 75%}
       .column{ 
         display: flex; 
         flex-direction: row;
@@ -158,3 +156,15 @@ footer{
 
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .navs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form{
+        scale: 0.7;
+    }
+}
+  

@@ -156,92 +156,112 @@ footer .kamelia p {
   color: white;
 }
 
-main .maininfo h1 {
-  font-size: 102px;
-  height: 1.2em;
-  text-align: center;
-  border-bottom: 2px solid rgba(0, 153, 255, 0.76);
-  margin-top: 8vh;
-  margin-bottom: 20px;
-  font-family: "Kanit", serif;
-}
-main .maininfo img {
-  width: 60vw;
-  height: 52vh;
-  margin: auto;
-  margin-bottom: 20px;
-}
-main .maininfo .fortexts {
+main {
   display: flex;
-  flex-direction: column;
-  gap: 6vh;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
 }
-main .maininfo .fortexts h2 {
-  width: 50%;
-  font-family: "Kanit", serif;
-  font-size: 70px;
-  font-weight: 700;
-  color: #343232;
-  margin-bottom: 9px;
-  text-align: center;
-  margin: auto;
-}
-main .maininfo .fortexts p {
-  width: 50%;
-  font-family: "Kanit", serif;
-  font-size: 23px;
-  font-weight: 400;
-  margin-bottom: 9px;
-  color: grey;
-  text-align: center;
-  margin: auto;
-}
-
-main .goodc .kaikaci2, main .goodc .kaikaci {
-  display: flex;
-  margin-top: 6%;
-  gap: 3%;
-  margin: auto;
-  margin-bottom: 10vh;
-}
-main .goodc .kaikaci2 img, main .goodc .kaikaci img {
+main .wrapper {
+  width: 26vw;
+  height: 47vh;
+  color: #fff;
+  background-color: rgb(77, 174, 235);
   border-radius: 10px;
-  width: 500px;
-  height: 400px;
-}
-main .goodc .kaikaci2 .pandh, main .goodc .kaikaci .pandh {
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
-  max-width: 20vw;
   justify-content: center;
 }
-main .goodc .kaikaci2 .pandh h1, main .goodc .kaikaci .pandh h1 {
-  font-size: 50px;
-  line-height: 44px;
-  margin-bottom: 30px;
+main .wrapper h1 {
+  font-size: 36px;
+  text-align: center;
 }
-main .goodc .kaikaci2 .pandh p, main .goodc .kaikaci .pandh p {
-  font-size: 22px;
-  line-height: 22px;
-  width: 160%;
-  color: rgb(54, 53, 53);
+main .wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10%;
 }
-main .goodc .kaikaci2 .pandh button, main .goodc .kaikaci .pandh button {
-  font-size: 22px;
-  border-radius: 30px;
-  padding: 15px;
-  margin-top: 5em;
-  background-color: rgb(77, 174, 235);
-  color: white;
+main .wrapper .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding-left: 5%;
 }
-main .goodc .kaikaci2 .pandh button:hover, main .goodc .kaikaci .pandh button:hover {
+main .wrapper .input-box input::-moz-placeholder {
+  color: #fff;
+}
+main .wrapper .input-box input::placeholder {
+  color: #fff;
+}
+main .wrapper .input-box input i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+main .wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+main .wrapper .remember-forgot label, main .wrapper .remember-forgot input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+main .wrapper .remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+main .wrapper .remember-forgot a:hover {
+  text-decoration: underline;
+}
+main .wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
   cursor: pointer;
-  background-color: rgb(38, 104, 226);
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+main .wrapper .btn:hover {
+  background-color: lightgrey;
+}
+main .wrapper .register-link {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+main .wrapper .register-link p, main .wrapper .register-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+main .wrapper .register-link p:hover, main .wrapper .register-link a:hover {
+  text-decoration: underline;
 }
 
 header {
-  width: 100%;
   height: 13vh;
+  margin-bottom: 4%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #FFF;
 }
 header ul .dropdown {
@@ -270,18 +290,13 @@ header #saxeli p {
   font-weight: 400;
 }
 
-main .maininfo {
-  display: flex;
-  flex-direction: column;
+main {
+  margin-bottom: 5%;
 }
-main .goodc {
-  padding-top: 6%;
-  padding-left: 20%;
-  padding-right: 25%;
-}
-main .goodc .kaikaci2 {
-  max-width: 57vw;
-  justify-content: space-between;
+main i {
+  font-size: 20px;
+  color: white;
+  display: inline-block;
 }
 
 footer {

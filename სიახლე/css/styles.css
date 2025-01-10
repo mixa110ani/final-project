@@ -146,50 +146,7 @@ header ul .dropdown .content:hover {
   display: block;
 }
 
-main #all .flex .card {
-  width: 312px;
-  height: 292px;
-  margin-right: 33px;
-}
-main #all .flex .card img {
-  width: 125%;
-  height: 348px;
-  margin-bottom: 23px;
-  border-radius: 8px;
-}
-main #all .flex .card h1 {
-  font-family: "Roboto", serif;
-  font-size: 38px;
-  font-weight: 400;
-  color: #343232;
-  width: 100%;
-  margin-bottom: 9px;
-}
-main #all .flex .card p {
-  font-family: "Roboto", serif;
-  font-size: 22px;
-  font-weight: 400;
-  color: #636060;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-main #all .flex .card button {
-  background-color: rgb(77, 138, 235);
-  color: white;
-  font-size: 30px;
-  font-family: "serif";
-  border-radius: 4px;
-  padding: 7px;
-}
-main #all .flex .card button:hover {
-  background-color: rgb(13, 126, 191);
-}
-main #all .flex .card .button {
-  display: flex;
-  justify-content: space-between;
-}
-
-main #all .imga {
+main .imga {
   display: flex;
   flex-direction: column;
   margin: 84px auto;
@@ -204,18 +161,18 @@ main #all .imga {
   color: #FFF;
   padding: 100px 20px;
 }
-main #all .imga p {
+main .imga p {
   font-family: "Roboto", serif;
   font-size: 1.5rem;
   font-weight: 400;
   color: grey;
 }
-main #all .imga h1 {
+main .imga h1 {
   font-family: "Roboto", serif;
   font-size: 7rem;
   font-weight: 700;
 }
-main #all .imga button {
+main .imga button {
   margin-top: 40px;
   background-color: rgb(35, 100, 35);
   color: white;
@@ -225,7 +182,7 @@ main #all .imga button {
   padding: 12px;
   border: none;
 }
-main #all .imga button:hover {
+main .imga button:hover {
   background-color: rgb(13, 53, 5);
 }
 
@@ -239,29 +196,164 @@ footer .kamelia p {
   color: white;
 }
 
-main #all #newspaper h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  text-align: center;
-  border-bottom: 3px solid rgb(77, 174, 235);
-  padding: 0.3em;
+main #sawiro {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 120px;
+  width: 43vw;
 }
-main #all #newspaper .fornew {
+main #satauri1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 0px;
+  display: inline-block;
+  color: #4E6FAE;
+}
+main #satauri2 {
+  font-size: 26px;
+  font-weight: 200;
+  display: inline-block;
+  color: #4E6FAE;
+}
+main #div5 {
+  margin: 0 auto;
+  width: 1052px;
+  margin-bottom: 26px;
   display: flex;
+  justify-content: flex-start;
 }
-main #all #newspaper .fornew img {
-  width: 16vw;
-  height: 16vh;
+main #xazi {
+  width: 2px;
+  height: 25px;
+  background-color: #5012D5;
+  display: inline-block;
+  margin: 0px 12px 0px 17px;
 }
-main #all #newspaper .fornew p {
-  width: 41%;
-  font-size: 22.5px;
+main #xazi1 {
+  width: 2px;
+  height: 50px;
+  background-color: #5012D5;
+  display: inline-block;
+  margin: 0px 50px;
+}
+
+main .cifrebi {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px;
+  color: #84FF81;
+  background-color: #5012D5;
+  display: inline-block;
+  margin-left: 52px;
+  margin-bottom: 30px;
+}
+main .maisi {
+  font-size: 24px;
+  font-weight: 400;
+  color: #8D81FF;
+  margin-left: 52px;
+  margin-bottom: 35px;
+}
+main .satauri {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4E6FAE;
+  margin-left: 52px;
+}
+main .surati {
+  margin-left: 52px;
+  margin-top: 30px;
+  vertical-align: top;
+}
+main .teqsti {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4E6FAE;
+  display: inline-block;
+  margin-left: 90px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 900px;
+  height: 281px;
+  margin-right: 97px;
+}
+main #gverdi {
+  color: #4E6FAE;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+  padding-right: 81px;
+  text-decoration: none;
+}
+main #teqsti-2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4E6FAE;
+  display: block;
+  margin-left: 52px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 900px;
+  height: 281px;
+  margin-right: 97px;
+}
+main .cartoni {
+  display: flex;
+  align-items: center;
+  padding: 101px;
+}
+main .forcifrebi {
+  padding-top: 9vh;
+  padding-left: 6vw;
+}
+
+main .imga {
+  display: flex;
+  flex-direction: column;
+  margin: 84px auto;
+  height: 50vh;
+  background-image: url(../images/546091.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  padding: 100px 20px;
+}
+main .imga p {
+  font-family: "Roboto", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: grey;
+}
+main .imga h1 {
+  font-family: "Roboto", serif;
+  font-size: 13rem;
+  font-weight: 700;
+}
+main .imga button {
+  margin-top: 40px;
+  background-color: rgb(35, 100, 35);
+  color: white;
+  font-size: 30px;
+  font-family: "serif";
+  border-radius: 9px;
+  padding: 12px;
+  border: none;
+}
+main .imga button:hover {
+  background-color: rgb(13, 53, 5);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
   width: 100%;
-  height: 50vh;
+  height: 5vh;
   color: #FFF;
 }
 header ul .dropdown {
@@ -302,88 +394,53 @@ header img {
   border-radius: 21px;
 }
 
-main #h32 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 100px;
-  font-weight: 400;
-  text-align: center;
-  border-bottom: 3px solid rgb(77, 174, 235);
-  padding: 0.3em;
-}
-main #all {
-  display: flex;
-  justify-content: space-between;
-}
-main #all #newspaper {
-  width: 51em;
-  margin-top: 10rem;
-}
-main #all .flex {
-  height: 20rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 53px;
-  flex-wrap: wrap;
-  margin-bottom: 15%;
-}
-main #all .cardebs {
-  height: 90vh;
-  width: 54vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20%;
-  margin-bottom: 5%;
-  margin-top: 10rem;
-}
-@media only screen and (max-width: 1024px) {
-  main #all .cardebs {
-    width: 75%;
-  }
-}
-main #all .cardebs .column {
-  display: flex;
-  flex-direction: row;
-  width: 76%;
-  justify-content: space-between;
-}
-main #all .cardebs--card1 {
-  width: 400px;
-  height: 300px;
-  margin-right: 33px;
-}
-main #all .cardebs--card1 img {
-  width: 100%;
-  height: 266px;
-  margin-bottom: 23px;
-}
-main #all .cardebs--card1 h1 {
-  font-family: "Roboto", serif;
-  font-size: 30px;
-  font-weight: 400;
-  color: #343232;
-  width: 100%;
-  margin-bottom: 9px;
-}
-main #all .cardebs--card1 p {
-  font-family: "Roboto", serif;
-  font-size: 25px;
-  font-weight: 400;
-  color: #636060;
-}
-@media only screen and (max-width: 1024px) {
-  main #all .cardebs--card1 {
-    margin-bottom: 50px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  main #all .cardebs--card1 p {
-    display: none;
-  }
-}
+/*main {
+    #h32{
+        @include h1stvis;
+    }
+    #all{
+    display: flex;
+    justify-content: space-between;
+    #newspaper{
+        width: 51em;
+        margin-top: 10rem;
+        @extend %axali;
+    }
+    .flex {
+        @include flex2;
 
+        .card {
+         @extend %card1;
+        }
+    }
+    .imga{
+        @extend %imga;
+    }
+     .cardebs{
+        @include cards7;
+        @media only screen and (max-width: 1024px){ 
+            width: 75%}
+      .column{ 
+        display: flex; 
+        flex-direction: row;
+        width: 76%;
+        justify-content: space-between;
+    }      
+        &--card1{
+            @include card4;
+            @media only screen and (max-width: 1024px){
+                margin-bottom: 50px;
+            }
+            @media only screen and (max-width: 480px){
+                p{
+                    display:none;
+                }
+            }
+    }
+  }
+}
+}
+*/
 footer {
   width: 100%;
   height: 201px;

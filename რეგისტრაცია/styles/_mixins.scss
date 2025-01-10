@@ -45,9 +45,11 @@
 
 }
 
-@mixin headers(){
+@mixin headersi(){
     width: 100%;
-    height: 5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #FFF;
 }
 
@@ -80,83 +82,33 @@
     padding: 12px;
 }
 
-@mixin flex(){
 
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-}
-
-@mixin cards(){
-    height: 900px;
-    gap: 15em;
-    flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+@mixin field(){
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: center;
-}
-
-
-@mixin flex2{
-        height: 20rem;
-        display: flex;
+    justify-content: center;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 53px;
-        flex-wrap: wrap;
-        margin-bottom: 15%;
+        width: max-content;
+        gap: 1.25rem;
+        border: none;
 }
 
 
-@mixin cards7(){
-    height: 90vh;
-    width: 54vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: center;
-            
-    align-items: center;
-    gap: 20%;
-    margin-bottom: 5%;
-    margin-top: 10rem;
-
+@mixin h2s{
+    height: 1.2em;
+    margin-top: 10%;
+    font-family: $font-stack-header;
+    font-weight: $font-weight-2;
+    font-size: $name-font-size;
+    border-bottom: 3px solid $cards-button-color;
 }
 
-@mixin card4(){
-    width: 400px;
-    height: 300px;
-    margin-right: 33px;
-    img{
-        width: $width-cardimage2;
-        height: $height-cardimage2;
-        margin-bottom: 23px;
-    }
-    h1{
-        font-family: $font-stack;
-        font-size: 30px;
-        font-weight: 400;
-        color: #343232;
-        width: 100%;
-        margin-bottom: 9px;
-    }
-    p{
-        font-family: $font-stack;
-        font-size: 25px;
-        font-weight: 400;
-        color: #636060;
-        
-    }
-
+@mixin info{
+    font-family: Helvetica Neue LT GEO;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 23px;
 }
 
 @mixin footers{
@@ -204,14 +156,4 @@ margin-top: 58px;
 @mixin icons(){
     font-size: 30px;
     color: cyan;
-}
-
-
-@mixin h1stvis{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 100px;
-    font-weight: $font-weight-2;
-    text-align:center;
-    border-bottom: 3px solid $cards-button-color;
-    padding: 0.3em;
 }

@@ -34,8 +34,7 @@
     background-color: $cards-button-color;
     position: fixed;
     z-index: 10;
-    width: 100%;   
-    padding-right: 141px;
+    width: 100%;  
     padding-top: 50px;
     display: flex;
     flex-direction: row;
@@ -119,7 +118,7 @@
 
 %card1{
     width: 312px;;
-    height: 292px;
+    height: max-content;
     margin-right: 33px;
     img{
         width: $width-cardimage;
