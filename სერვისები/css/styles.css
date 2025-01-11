@@ -69,7 +69,6 @@ header .navs {
   position: fixed;
   z-index: 10;
   width: 100%;
-  padding-right: 141px;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
@@ -82,7 +81,7 @@ header ul {
   gap: 50px;
 }
 header li {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 400;
   font-family: "Kanit", serif;
   color: white;
@@ -115,7 +114,7 @@ header ul .dropdown button {
   background-color: transparent;
   color: white;
   padding: 10px 15px;
-  font-size: 30px;
+  font-size: 1.875em;
   border: none;
   cursor: pointer;
 }
@@ -146,16 +145,6 @@ header ul .dropdown .content:hover {
   display: block;
 }
 
-footer .kamelia h4 {
-  font-size: 26px;
-  color: white;
-  margin-bottom: 1.438rem;
-  font-weight: 400;
-}
-footer .kamelia p {
-  color: white;
-}
-
 main .section .title h1 {
   width: 28%;
   height: 4vh;
@@ -166,8 +155,8 @@ main .section .title h1 {
   border-bottom: 5px solid rgb(77, 174, 235);
 }
 main .section .card1 {
-  width: 20vw;
-  height: 41vh;
+  width: 500px;
+  height: 493px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -177,7 +166,7 @@ main .section .card1 {
   background-color: white;
 }
 main .section .card1 .images {
-  height: 20vh;
+  height: 220px;
   background-image: url(./../images/236379211.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,10 +203,99 @@ main .section .card1 .fortext i {
   margin-left: 10px;
 }
 
+footer {
+  background-color: rgb(77, 174, 235);
+  /*responsive*/
+}
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+footer .row {
+  display: flex;
+}
+footer ul {
+  list-style: none;
+}
+footer .footer {
+  padding: 70px 0;
+}
+footer .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer-col h4 {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+footer .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-col ul li a {
+  font-size: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+footer .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+footer .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+footer .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  footer .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  footer .footer-col {
+    width: 100%;
+  }
+}
+
 header {
   width: 100%;
   height: 13vh;
   color: #FFF;
+}
+header .bars {
+  display: none;
+  color: white;
+  font-size: 1.875em;
 }
 header ul .dropdown {
   display: inline-block;
@@ -240,7 +318,7 @@ header #saxeli {
   font-family: "Kanit", serif;
 }
 header #saxeli p {
-  font-size: 90px;
+  font-size: 5.625em;
   font-family: "Kanit", serif;
   font-weight: 400;
 }
@@ -257,10 +335,77 @@ main .section .cards {
   gap: 50px;
 }
 main .section .cards .forcard {
+  width: 2000px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 130px;
-  width: -moz-max-content;
-  width: max-content;
+}
+main .section .cards .forcard .images1 {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./../images/Credit-Card-Processing.jpg");
+}
+main .section .cards .forcard .images1:hover {
+  scale: 1.2;
+  transition: 0.4s;
+}
+main .section .cards .forcard .images2 {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./../images/furniture_pieces_office_reception_1000x753.webp");
+}
+main .section .cards .forcard .images2:hover {
+  scale: 1.2;
+  transition: 0.4s;
+}
+main .section .cards .forcard .images3 {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./../images/How-Much-Does-A-Load-Of-Laundry-Cost-At-Home_-Home-vs-Laundromat-Costs.webp");
+}
+main .section .cards .forcard .images3:hover {
+  scale: 1.2;
+  transition: 0.4s;
+}
+main .section .cards .forcard .images4 {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./../images/asphalt-paving-experts.jpg");
+}
+main .section .cards .forcard .images4:hover {
+  scale: 1.2;
+  transition: 0.4s;
+}
+main .section .cards .forcard .images5 {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./../images/1718097239_777.jpg");
+}
+main .section .cards .forcard .images5:hover {
+  scale: 1.2;
+  transition: 0.4s;
+}
+main .section .cards .forcard .images6 {
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./../images/istockphoto-468404672-612x612.jpg");
+}
+main .section .cards .forcard .images6:hover {
+  scale: 1.2;
+  transition: 0.4s;
 }
 main .section .cards .forcard .card1:hover {
   background-color: #ddd;
@@ -268,84 +413,35 @@ main .section .cards .forcard .card1:hover {
 }
 
 footer {
-  width: 100%;
-  height: 201px;
-  background-color: rgb(77, 174, 235);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  padding: 3vw;
 }
-footer .kamelia {
-  padding-top: 1.5%;
-  width: 15em;
+
+@media screen and (max-width: 1024px) {
+  .navs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .forcard {
+    width: 1024px !important;
+  }
+  .forcard .card1 {
+    width: 435px !important;
+  }
+  .title h1 {
+    height: 8vh !important;
+  }
 }
-footer .kamelia #imagess {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 44px;
-}
-footer .kamelia #imagess i {
-  font-size: 30px;
-  color: cyan;
-}
-footer #inf ul {
-  margin-top: 59px;
-  margin-left: 137px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-}
-footer #inf2 ul {
-  margin-top: 59px;
-  margin-left: 96px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-}
-footer #inf3 ul {
-  margin-top: 59px;
-  margin-left: 108px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-}
-footer #inf4 ul {
-  margin-top: 59px;
-  margin-left: 108px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-  gap: 30px;
-}
-footer #bolo {
-  margin-top: 59px;
-  margin-left: 112px;
-  font-family: "Roboto", serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: white;
-}
-footer #geolab {
-  width: 38px;
-  height: 50px;
-  margin-left: 416px;
-  margin-top: 58px;
+@media screen and (max-width: 768px) {
+  nav .bars {
+    display: block;
+  }
+  .navs ul {
+    display: none !important;
+  }
+  .forcard {
+    width: 768px !important;
+  }
+  .title h1 {
+    height: 8vh !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

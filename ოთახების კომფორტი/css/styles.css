@@ -1,0 +1,469 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header header {
+  width: 100%;
+  height: 56vh;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 151px;
+}
+header .navs {
+  background-color: rgb(77, 174, 235);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+}
+header li {
+  font-size: 1.875em;
+  font-weight: 400;
+  font-family: "Kanit", serif;
+  color: white;
+}
+header li:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Kanit", serif;
+  color: white;
+}
+header h1:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: grey;
+  transition: 0.8s;
+}
+
+header ul .dropdown button {
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.875em;
+  border: none;
+  cursor: pointer;
+}
+header ul .dropdown button:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+header ul .dropdown a {
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  display: block;
+  padding: 10px 15px;
+}
+header ul .dropdown a:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+header ul .dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header ul .dropdown .content:hover {
+  display: block;
+}
+
+main .maininfo h1 {
+  font-size: 102px;
+  height: 1.2em;
+  text-align: center;
+  margin-top: 8vh;
+  margin-bottom: 20px;
+  font-family: "Kanit", serif;
+}
+main .maininfo img {
+  width: 60vw;
+  height: 52vh;
+  margin: auto;
+  margin-bottom: 20px;
+}
+main .maininfo .fortexts {
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+}
+main .maininfo .fortexts h2 {
+  font-family: "Kanit", serif;
+  font-size: 70px;
+  font-weight: 700;
+  color: #343232;
+  margin-bottom: 9px;
+  text-align: center;
+  margin: auto;
+}
+main .maininfo .fortexts p {
+  width: 50%;
+  font-family: "Kanit", serif;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 9px;
+  color: grey;
+  text-align: center;
+  margin: auto;
+}
+
+main .goodc .kaikaci2, main .goodc .kaikaci {
+  display: flex;
+  margin-top: 6%;
+  gap: 3%;
+  margin: auto;
+  margin-bottom: 10vh;
+  align-items: center;
+}
+main .goodc .kaikaci2 img, main .goodc .kaikaci img {
+  border-radius: 10px;
+  width: 500px;
+  height: 400px;
+}
+main .goodc .kaikaci2 .pandh, main .goodc .kaikaci .pandh {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  justify-content: center;
+}
+main .goodc .kaikaci2 .pandh h1, main .goodc .kaikaci .pandh h1 {
+  font-size: 50px;
+  line-height: 44px;
+  margin-bottom: 30px;
+  font-family: "Noto Serif Georgian";
+}
+main .goodc .kaikaci2 .pandh p, main .goodc .kaikaci .pandh p {
+  font-size: 22px;
+  line-height: 29px;
+  width: 160%;
+  color: rgb(54, 53, 53);
+  font-family: "Noto Serif Georgian";
+}
+main .goodc .kaikaci2 .pandh button, main .goodc .kaikaci .pandh button {
+  font-size: 22px;
+  border-radius: 30px;
+  padding: 15px;
+  margin-top: 5em;
+  background-color: rgb(77, 174, 235);
+  color: white;
+}
+main .goodc .kaikaci2 .pandh button:hover, main .goodc .kaikaci .pandh button:hover {
+  cursor: pointer;
+  background-color: rgb(38, 104, 226);
+}
+
+footer {
+  background-color: rgb(77, 174, 235);
+  /*responsive*/
+}
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+footer .row {
+  display: flex;
+}
+footer ul {
+  list-style: none;
+}
+footer .footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+footer .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer-col h4 {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+footer .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-col ul li a {
+  font-size: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+footer .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+footer .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+footer .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  footer .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  footer .footer-col {
+    width: 100%;
+  }
+}
+
+main .aboutm h2 {
+  font-size: 5em;
+}
+main .aboutm p {
+  font-size: 2em;
+}
+main .aboutm .row {
+  display: flex;
+}
+main .aboutm .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+main .aboutm .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+main .aboutm .card img {
+  width: 100%;
+  border-radius: 15px;
+}
+main .aboutm .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+main .aboutm .container {
+  padding: 0 16px;
+}
+main .aboutm .container::after, main .aboutm .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+main .aboutm .title {
+  color: grey;
+}
+main .aboutm .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  background-color: rgb(77, 174, 235);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+main .aboutm .button:hover {
+  background-color: rgb(75, 117, 196);
+}
+@media screen and (max-width: 650px) {
+  main .aboutm .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+header {
+  width: 100%;
+  height: 13vh;
+  color: #FFF;
+}
+header ul .dropdown {
+  display: inline-block;
+  position: relative;
+  margin-top: -8px;
+}
+header ul .dropdown:hover .content {
+  display: block;
+}
+header #saxeli {
+  margin-left: 54px;
+  margin-top: -5.4em;
+  margin-right: 54px;
+  width: 313px;
+  height: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kanit", serif;
+}
+header #saxeli p {
+  font-size: 5.625em;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+}
+header .bars {
+  display: none;
+  color: white;
+  font-size: 1.875em;
+}
+
+main .maininfo {
+  display: flex;
+  flex-direction: column;
+}
+main .goodc {
+  padding-top: 6%;
+  padding-left: 20%;
+  padding-right: 25%;
+}
+main .goodc .kaikaci2 {
+  max-width: 57vw;
+  justify-content: space-between;
+}
+
+footer {
+  padding: 3vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .navs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .kaikaci {
+    width: 66vh;
+  }
+  .kaikaci2 {
+    display: inline-block;
+  }
+  .goodc {
+    padding-left: 13% !important;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column {
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .bars {
+    display: block;
+  }
+  .navs ul {
+    display: none !important;
+  }
+  .kaikaci {
+    display: block !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+  .kaikaci .pandh {
+    max-width: 52vw !important;
+  }
+}/*# sourceMappingURL=styles.css.map */

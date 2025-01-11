@@ -69,7 +69,6 @@ header .navs {
   position: fixed;
   z-index: 10;
   width: 100%;
-  padding-right: 141px;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
@@ -82,7 +81,7 @@ header ul {
   gap: 50px;
 }
 header li {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 400;
   font-family: "Kanit", serif;
   color: white;
@@ -115,7 +114,7 @@ header ul .dropdown button {
   background-color: transparent;
   color: white;
   padding: 10px 15px;
-  font-size: 30px;
+  font-size: 1.875em;
   border: none;
   cursor: pointer;
 }
@@ -146,21 +145,10 @@ header ul .dropdown .content:hover {
   display: block;
 }
 
-footer .kamelia h4 {
-  font-size: 26px;
-  color: white;
-  margin-bottom: 1.438rem;
-  font-weight: 400;
-}
-footer .kamelia p {
-  color: white;
-}
-
 main .maininfo h1 {
   font-size: 102px;
   height: 1.2em;
   text-align: center;
-  border-bottom: 2px solid rgba(0, 153, 255, 0.76);
   margin-top: 8vh;
   margin-bottom: 20px;
   font-family: "Kanit", serif;
@@ -177,7 +165,6 @@ main .maininfo .fortexts {
   gap: 6vh;
 }
 main .maininfo .fortexts h2 {
-  width: 50%;
   font-family: "Kanit", serif;
   font-size: 70px;
   font-weight: 700;
@@ -203,6 +190,7 @@ main .goodc .kaikaci2, main .goodc .kaikaci {
   gap: 3%;
   margin: auto;
   margin-bottom: 10vh;
+  align-items: center;
 }
 main .goodc .kaikaci2 img, main .goodc .kaikaci img {
   border-radius: 10px;
@@ -219,12 +207,14 @@ main .goodc .kaikaci2 .pandh h1, main .goodc .kaikaci .pandh h1 {
   font-size: 50px;
   line-height: 44px;
   margin-bottom: 30px;
+  font-family: "Noto Serif Georgian";
 }
 main .goodc .kaikaci2 .pandh p, main .goodc .kaikaci .pandh p {
   font-size: 22px;
-  line-height: 22px;
+  line-height: 29px;
   width: 160%;
   color: rgb(54, 53, 53);
+  font-family: "Noto Serif Georgian";
 }
 main .goodc .kaikaci2 .pandh button, main .goodc .kaikaci .pandh button {
   font-size: 22px;
@@ -237,6 +227,154 @@ main .goodc .kaikaci2 .pandh button, main .goodc .kaikaci .pandh button {
 main .goodc .kaikaci2 .pandh button:hover, main .goodc .kaikaci .pandh button:hover {
   cursor: pointer;
   background-color: rgb(38, 104, 226);
+}
+
+footer {
+  background-color: rgb(77, 174, 235);
+  /*responsive*/
+}
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+footer .row {
+  display: flex;
+}
+footer ul {
+  list-style: none;
+}
+footer .footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+footer .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer-col h4 {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+footer .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-col ul li a {
+  font-size: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+footer .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+footer .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+footer .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  footer .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  footer .footer-col {
+    width: 100%;
+  }
+}
+
+main .aboutm h2 {
+  font-size: 5em;
+  margin-bottom: 2%;
+}
+main .aboutm p {
+  font-size: 2em;
+}
+main .aboutm .row {
+  display: flex;
+}
+main .aboutm .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+main .aboutm .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+main .aboutm .card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 60vh;
+}
+main .aboutm .about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+main .aboutm .container {
+  padding: 0 16px;
+}
+main .aboutm .container::after, main .aboutm .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+main .aboutm .title {
+  color: grey;
+}
+main .aboutm .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  background-color: rgb(77, 174, 235);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+main .aboutm .button:hover {
+  background-color: rgb(75, 117, 196);
+}
+@media screen and (max-width: 650px) {
+  main .aboutm .column {
+    width: 100%;
+    display: block;
+  }
 }
 
 header {
@@ -265,9 +403,14 @@ header #saxeli {
   font-family: "Kanit", serif;
 }
 header #saxeli p {
-  font-size: 90px;
+  font-size: 5.625em;
   font-family: "Kanit", serif;
   font-weight: 400;
+}
+header .bars {
+  display: none;
+  color: white;
+  font-size: 1.875em;
 }
 
 main .maininfo {
@@ -285,84 +428,44 @@ main .goodc .kaikaci2 {
 }
 
 footer {
-  width: 100%;
-  height: 201px;
-  background-color: rgb(77, 174, 235);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  padding: 3vw;
 }
-footer .kamelia {
-  padding-top: 1.5%;
-  width: 15em;
+
+@media screen and (max-width: 1024px) {
+  .navs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .kaikaci {
+    width: 66vh;
+  }
+  .kaikaci2 {
+    display: inline-block;
+  }
+  .goodc {
+    padding-left: 13% !important;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column {
+    width: 60% !important;
+  }
 }
-footer .kamelia #imagess {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 44px;
-}
-footer .kamelia #imagess i {
-  font-size: 30px;
-  color: cyan;
-}
-footer #inf ul {
-  margin-top: 59px;
-  margin-left: 137px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-}
-footer #inf2 ul {
-  margin-top: 59px;
-  margin-left: 96px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-}
-footer #inf3 ul {
-  margin-top: 59px;
-  margin-left: 108px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-}
-footer #inf4 ul {
-  margin-top: 59px;
-  margin-left: 108px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-  gap: 30px;
-}
-footer #bolo {
-  margin-top: 59px;
-  margin-left: 112px;
-  font-family: "Roboto", serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: white;
-}
-footer #geolab {
-  width: 38px;
-  height: 50px;
-  margin-left: 416px;
-  margin-top: 58px;
+@media screen and (max-width: 768px) {
+  nav .bars {
+    display: block;
+  }
+  .navs ul {
+    display: none !important;
+  }
+  .kaikaci {
+    display: block !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+  }
+  .kaikaci .pandh {
+    max-width: 52vw !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

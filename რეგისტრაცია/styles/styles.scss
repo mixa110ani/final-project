@@ -9,6 +9,11 @@ header{
     height: 13vh;
     margin-bottom: 4%;
     @include headersi;
+    .bars{
+        display: none;
+        color: white;
+        font-size: $header-font-size;
+    }
     ul{
         
         
@@ -72,52 +77,40 @@ main{
     
 
     footer{
-        @include footers;
-        .kamelia{
-            padding-top:1.5%;
-            width: 15em;
-            @extend %inf1;
-            #imagess{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                gap: 44px;
-                i{
-                    @include icons;
-                }
-            }
-        }
-        #inf{
-            ul{
-                @include lulu;
-            }
+        @extend %forcool;
+    padding: 3vw;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .navs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header{
+        margin-bottom: 10%;
+    }
+    .wrapper{
+        width: 56vh !important;
+    }
+}
+  
+@media screen and (max-width: 768px){
+    nav{
+        .bars{
+            display: block;
             
-        }
-        #inf2{
-            ul{
-                @include lulu($margin-left:96px);
-            }
-            
-        }
-        #inf3{
-            ul{
-                @include lulu($margin-left:108px);
-            }
-        }
-        #inf4{
-            ul{
-                @include lulu($margin-left:108px);
-                gap: 30px;
-            }
-        }
-        #bolo{
-            @include bolo;
-        }
-    
-        #geolab{
-            @include geolab;
-    
         }
     }
+    .navs{
+        ul{
+            display: none !important;
+        }
+    }
+
+    .wrapper{
+        width: 56vh !important;
+    }
+}
 

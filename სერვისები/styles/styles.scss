@@ -6,6 +6,11 @@
 header{
     @extend %headeri;
     @include headers;
+    .bars{
+        display: none;
+        color: white;
+        font-size: $header-font-size;
+    }
     ul{
         
         
@@ -62,9 +67,37 @@ main{
             flex-direction: column;
             gap: 50px;
             .forcard{
-                display:flex;
+                width: 2000px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 gap: 130px;
-                width: max-content;
+                .images1{
+                    @include forimages;
+                    background-image: url("./../images/Credit-Card-Processing.jpg")
+                }
+                .images2{
+                    @include forimages;
+                    background-image: url("./../images/furniture_pieces_office_reception_1000x753.webp")
+                }
+                .images3{
+                    @include forimages;
+                    background-image: url("./../images/How-Much-Does-A-Load-Of-Laundry-Cost-At-Home_-Home-vs-Laundromat-Costs.webp")
+                }
+                .images4{
+                    @include forimages;
+                    background-image: url("./../images/asphalt-paving-experts.jpg")
+                }
+                .images5{
+                    @include forimages;
+                    background-image: url("./../images/1718097239_777.jpg")
+                }
+                .images6{
+                    @include forimages;
+                    background-image: url("./../images/istockphoto-468404672-612x612.jpg")
+                }
+                
+
                 .card1{
                     &:hover{
                         background-color: #ddd;
@@ -78,52 +111,49 @@ main{
 }
 
 footer{
-    @include footers;
-    .kamelia{
-        padding-top:1.5%;
-        width: 15em;
-        @extend %inf1;
-        #imagess{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            gap: 44px;
-            i{
-                @include icons;
-            }
-        }
-    }
-    #inf{
-        ul{
-            @include lulu;
-        }
-        
-    }
-    #inf2{
-        ul{
-            @include lulu($margin-left:96px);
-        }
-        
-    }
-    #inf3{
-        ul{
-            @include lulu($margin-left:108px);
-        }
-    }
-    #inf4{
-        ul{
-            @include lulu($margin-left:108px);
-            gap: 30px;
-        }
-    }
-    #bolo{
-        @include bolo;
-    }
+    @extend %forcool;
+    padding: 3vw;
+}
 
-    #geolab{
-        @include geolab;
 
+
+@media screen and (max-width: 1024px) {
+    .navs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .forcard{
+        width: 1024px !important;
+        .card1{
+            width: 435px !important;
+        }
+    }
+    .title{
+        h1{
+            height: 8vh !important;
+        }
+    }
+}
+  
+@media screen and (max-width: 768px){
+    nav{
+        .bars{
+            display: block;
+            
+        }
+    }
+    .navs{
+        ul{
+            display: none !important;
+        }
+    }
+    .forcard{
+        width: 768px !important;
+    }
+    .title{
+        h1{
+            height: 8vh !important;
+        }
     }
 }
 

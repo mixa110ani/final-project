@@ -81,7 +81,7 @@ header ul {
   gap: 50px;
 }
 header li {
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 400;
   font-family: "Kanit", serif;
   color: white;
@@ -114,7 +114,7 @@ header ul .dropdown button {
   background-color: transparent;
   color: white;
   padding: 10px 15px;
-  font-size: 30px;
+  font-size: 1.875em;
   border: none;
   cursor: pointer;
 }
@@ -146,45 +146,60 @@ header ul .dropdown .content:hover {
 }
 
 main .flex .card {
-  width: 312px;
+  width: 500px;
+  height: 35vh !important;
   height: -moz-max-content;
   height: max-content;
   margin-right: 33px;
+  background-image: url(./../images/236378887.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 1%;
+  overflow: hidden;
 }
-main .flex .card img {
-  width: 125%;
-  height: 348px;
-  margin-bottom: 23px;
-  border-radius: 8px;
+main .flex .card:hover {
+  background-size: 200%;
+  transition: 0.8s;
 }
-main .flex .card h1 {
+
+h1 {
   font-family: "Roboto", serif;
   font-size: 38px;
-  font-weight: 400;
-  color: #343232;
+  font-weight: 700;
   width: 100%;
   margin-bottom: 9px;
 }
-main .flex .card p {
+
+p {
   font-family: "Roboto", serif;
   font-size: 22px;
   font-weight: 400;
-  color: #636060;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
-main .flex .card button {
+
+button {
   background-color: rgb(77, 138, 235);
   color: white;
   font-size: 30px;
   font-family: "serif";
-  border-radius: 4px;
-  padding: 7px;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
 }
-main .flex .card button:hover {
+button:hover {
   background-color: rgb(13, 126, 191);
 }
-main .flex .card .button {
+
+.button {
   display: flex;
   justify-content: space-between;
 }
@@ -194,7 +209,7 @@ main .imga {
   flex-direction: column;
   margin: 84px auto;
   height: 50vh;
-  background-image: url(../images/546091.jpg);
+  background-image: url(../images/3e9bcc4b353de0a027c7b106abdc3d3d.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -208,7 +223,7 @@ main .imga p {
   font-family: "Roboto", serif;
   font-size: 1.5rem;
   font-weight: 400;
-  color: grey;
+  color: rgb(226, 212, 212);
 }
 main .imga h1 {
   font-family: "Roboto", serif;
@@ -217,7 +232,7 @@ main .imga h1 {
 }
 main .imga button {
   margin-top: 40px;
-  background-color: rgb(35, 100, 35);
+  background-color: rgb(77, 174, 235);
   color: white;
   font-size: 30px;
   font-family: "serif";
@@ -229,14 +244,89 @@ main .imga button:hover {
   background-color: rgb(13, 53, 5);
 }
 
-footer .kamelia h4 {
-  font-size: 26px;
-  color: white;
-  margin-bottom: 1.438rem;
-  font-weight: 400;
+footer {
+  background-color: rgb(77, 174, 235);
+  /*responsive*/
 }
-footer .kamelia p {
-  color: white;
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+footer .row {
+  display: flex;
+}
+footer ul {
+  list-style: none;
+}
+footer .footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+footer .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer-col h4 {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+footer .footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: white;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-col ul li a {
+  font-size: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+footer .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+footer .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+footer .footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  footer .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  footer .footer-col {
+    width: 100%;
+  }
 }
 
 header {
@@ -248,6 +338,11 @@ header {
   background-size: cover;
   background-position: center;
   color: #FFF;
+}
+header .bars {
+  display: none;
+  color: white;
+  font-size: 1.875em;
 }
 header ul .dropdown {
   display: inline-block;
@@ -270,7 +365,7 @@ header #saxeli {
   font-family: "Kanit", serif;
 }
 header #saxeli p {
-  font-size: 90px;
+  font-size: 5.625em;
   font-family: "Kanit", serif;
   font-weight: 400;
 }
@@ -304,38 +399,45 @@ header form input {
   border-radius: 7px;
 }
 header form label {
-  margin-top: 10px;
+  margin: auto;
   color: rgba(29, 27, 27, 0.705);
   font-family: "serif";
 }
 header form button {
   background-color: rgb(77, 138, 235);
   color: white;
-  font-size: 30px;
+  font-size: 1.875em;
   font-family: "serif";
   border-radius: 7px;
   padding: 12px;
 }
+header form .fortexts {
+  margin: auto;
+}
 
 main .flex {
-  height: 20rem;
+  height: -moz-max-content;
+  height: max-content;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 53px;
   flex-wrap: wrap;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
+}
+main .flex .card h1 {
+  text-align: center;
 }
 main .cardebs {
-  height: 900px;
+  height: -moz-max-content;
+  height: max-content;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  gap: 20%;
-  margin-bottom: 5%;
+  gap: 7%;
+  margin-bottom: 4%;
 }
 main .cardebs .column {
   display: flex;
@@ -347,10 +449,11 @@ main .cardebs--card1 {
   width: 400px;
   height: 300px;
   margin-right: 33px;
+  margin-bottom: 13%;
 }
 main .cardebs--card1 img {
   width: 100%;
-  height: 266px;
+  height: 16.625em;
   margin-bottom: 23px;
 }
 main .cardebs--card1 h1 {
@@ -367,9 +470,9 @@ main .cardebs--card1 p {
   font-weight: 400;
   color: #636060;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   main .cardebs--card1 {
-    margin-bottom: 50px;
+    margin-bottom: 110px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -377,88 +480,87 @@ main .cardebs--card1 p {
     display: none;
   }
 }
-
-footer {
-  width: 100%;
-  height: 201px;
-  background-color: rgb(77, 174, 235);
+main .flex4 {
+  height: -moz-max-content;
+  height: max-content;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 53px;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  gap: 16%;
   justify-content: center;
 }
-footer .kamelia {
-  padding-top: 1.5%;
-  width: 15em;
-}
-footer .kamelia #imagess {
+main .flex4 .card1 {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 44px;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  border-radius: 13px;
+  margin-bottom: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-footer .kamelia #imagess i {
-  font-size: 30px;
-  color: cyan;
-}
-footer #inf ul {
-  margin-top: 59px;
-  margin-left: 137px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
+main .flex4 .card1 h1 {
+  text-align: center;
   color: white;
 }
-footer #inf2 ul {
-  margin-top: 59px;
-  margin-left: 96px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
+
+/*footer{
+    @include footers;
+    .kamelia{
+        padding-top:1.5%;
+        width: 15em;
+        @extend %inf1;
+        #imagess{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 44px;
+            i{
+                @include icons;
+            }
+        }
+    }
+    #inf{
+        ul{
+            @include lulu;
+        }
+
+    }
+    #inf2{
+        ul{
+            @include lulu($margin-left:96px);
+        }
+
+    }
+    #inf3{
+        ul{
+            @include lulu($margin-left:108px);
+        }
+    }
+    #inf4{
+        ul{
+            @include lulu($margin-left:108px);
+            gap: 30px;
+        }
+    }
+    #bolo{
+        @include bolo;
+    }
+
+    #geolab{
+        @include geolab;
+
+    }
 }
-footer #inf3 ul {
-  margin-top: 59px;
-  margin-left: 108px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-}
-footer #inf4 ul {
-  margin-top: 59px;
-  margin-left: 108px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  font-size: 15px;
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  color: white;
-  gap: 30px;
-}
-footer #bolo {
-  margin-top: 59px;
-  margin-left: 112px;
-  font-family: "Roboto", serif;
-  font-size: 12px;
-  font-weight: 400;
-  color: white;
-}
-footer #geolab {
-  width: 38px;
-  height: 50px;
-  margin-left: 416px;
-  margin-top: 58px;
+*/
+footer {
+  padding: 3vw;
 }
 
 @media screen and (max-width: 1024px) {
@@ -468,5 +570,33 @@ footer #geolab {
   }
   form {
     scale: 0.7;
+  }
+  .flex {
+    justify-content: space-between !important;
+    padding-left: 5%;
+    padding-right: 7%;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  form {
+    scale: 0.5;
+  }
+  .flex {
+    justify-content: center !important;
+  }
+  .cardebs--card1 {
+    margin-bottom: 106px;
+  }
+  nav .bars {
+    display: block;
+  }
+  .navs ul {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  form {
+    scale: 0.4;
   }
 }/*# sourceMappingURL=styles.css.map */

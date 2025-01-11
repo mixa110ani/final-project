@@ -8,6 +8,11 @@ html{
 header{
     @extend %headeri;
     @include headers;
+    .bars{
+        display: none;
+        color: white;
+        font-size: $header-font-size;
+    }
     ul{
         
         
@@ -118,51 +123,51 @@ main{
 }
 
 footer{
-    @include footers;
-    .kamelia{
-        padding-top:1.5%;
-        width: 15em;
-        @extend %inf1;
-        #imagess{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            gap: 44px;
-            i{
-                @include icons;
-            }
+    @extend %forcool;
+    padding: 3vw;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .navs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cartoni{
+        flex-direction: column;
+    }
+    .imga{
+        h1{
+            font-size: 11em !important; 
         }
     }
-    #inf{
+}
+  
+@media screen and (max-width: 768px){
+    nav{
+        .bars{
+            display: block;
+            
+        }
+    }
+    .navs{
         ul{
-            @include lulu;
-        }
-        
-    }
-    #inf2{
-        ul{
-            @include lulu($margin-left:96px);
-        }
-        
-    }
-    #inf3{
-        ul{
-            @include lulu($margin-left:108px);
+            display: none !important;
         }
     }
-    #inf4{
-        ul{
-            @include lulu($margin-left:108px);
-            gap: 30px;
+    .imga{
+        h1{
+            font-size: 8em !important; 
         }
-    }
-    #bolo{
-        @include bolo;
     }
 
-    #geolab{
-        @include geolab;
-
+    .surati{
+        width: 100% !important;
+    }
+    .teqsti{
+        width: 100% !important;
+    }
+    footer{
+        margin-top: 17%;
     }
 }
