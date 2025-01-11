@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "resetstyle";
 @import "placeholder";
 @import "variables";
@@ -55,9 +62,13 @@ header{
     #rest{
         width: 100%;
         height: 20vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: -5em;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         }
         img{
             height: 40vh;
@@ -130,11 +141,17 @@ footer{
 
 @media screen and (max-width: 1024px) {
     .navs{
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .cartoni{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .imga{
         h1{

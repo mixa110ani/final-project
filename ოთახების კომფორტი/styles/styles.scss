@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "resetstyle";
 @import "placeholder";
 @import "variables";
@@ -61,8 +68,13 @@ main{
         @extend %aboutus;
     }
     .maininfo{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         @extend %forinfo;
     }
     .goodc{
@@ -75,7 +87,9 @@ main{
         .kaikaci2{
             @extend %informationg;
             max-width: 57vw;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
         }
     }
 }
@@ -89,8 +103,11 @@ footer{
 
 @media screen and (max-width: 1024px) {
     .navs{
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .kaikaci{
         width: 66vh;
@@ -102,8 +119,13 @@ footer{
         padding-left: 13% !important;
     }
     .row{
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     }
     .column{
         width:60% !important;
@@ -124,11 +146,12 @@ footer{
     }
     .kaikaci{
         display:block !important;
+        width: -webkit-max-content !important;
+        width: -moz-max-content !important;
         width: max-content !important;
         .pandh{
             max-width: 52vw !important;
         }
     }
 }
-
 

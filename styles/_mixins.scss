@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import "variables";
 
 @mixin headeri(){
@@ -28,10 +35,19 @@
     margin-right: 54px;
     width: 313px;
     height: 193px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: $font-stack-header;
 }
 
@@ -56,6 +72,8 @@
 }
 
 @mixin form(){
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 30px;
     color: rgb(61, 60, 59);
@@ -94,7 +112,10 @@
 @mixin cards(){
     height: 900px;
     gap: 15em;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,18 +128,30 @@
 
 
 @mixin flex2{
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         margin-top: 53px;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin-bottom: 5%;
 
 }
 
 
 @mixin cards7(){
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     width: 100%;
     display: -webkit-box;
@@ -130,7 +163,11 @@
         -ms-flex-pack: end;
             justify-content: center;
             
-    align-items: center;
+    -webkit-box-align: center;
+            
+        -ms-flex-align: center;
+            
+            align-items: center;
     gap: 7%;
     margin-bottom: 4%;
 
@@ -166,11 +203,20 @@
 
 @mixin footers{
     width:100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     background-color: rgb(77, 174, 235);
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
 }
 
@@ -178,8 +224,13 @@
 @mixin lulu($margin-left:137px, $margin-top:59px){
    margin-top: $margin-top;
     margin-left: $margin-left;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction:column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
     gap: 14px;
     font-size: $font-size-footer;
     font-family: $font-stack;

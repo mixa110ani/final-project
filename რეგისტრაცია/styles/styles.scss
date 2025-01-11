@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @import "resetstyle";
 @import "placeholder";
@@ -65,9 +72,16 @@ main{
         display: inline-block;
     }
     .forgood{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content: space-between;
-        flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
     
     
@@ -85,8 +99,11 @@ main{
 
 @media screen and (max-width: 1024px) {
     .navs{
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     header{
         margin-bottom: 10%;
@@ -113,4 +130,3 @@ main{
         width: 56vh !important;
     }
 }
-
